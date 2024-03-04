@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary: #5D3587;
+  --secondary: #A367B1;
+  --accent: #FFFFFF;
+  --neutral: #A367B1;
+  --base-100: #594b85;
+  --info: #7BD3EA;
+  --success: #A1EEBD;
+  --warning: #F6F7C4;
+  --error: #F6D6D6;
+  --text: var(--fallback-bc,oklch(var(--bc)/1));
+  --color-bg-base-100: oklch(0.42 0.09 293.43)
+}
+
+.btn {
+  @apply rounded-full;
+}
+
+.bannerImage {
+  background-size: 100% auto;
+  /* padding:0 0 36% 0; */
+  width: 100%;
+}
+
+@layer components {
+  .navbarLi {
+    /* @apply hover:cursor-pointer duration-300; */
+  }
+}
+
+.text-input-color-base-100 {
+  color: var(--text);
+}
+
+.card-bg-color-defult {
+  background-color: var(--color-bg-base-100);
+  color: var(--text);
+}
